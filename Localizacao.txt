@@ -1,0 +1,286 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Localizacao.aspx.cs" Inherits="Localizacao" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Localização</title>
+</head>
+
+    <style>
+     .Principal {
+              width:100%;
+              height:510vh;
+            
+            }
+
+            .Menu {
+
+             width:100%;
+             height:10vh;
+             background-color:black;
+            }
+
+            .item {
+
+            color:white;
+            text-align:center;
+            height: 8vh;
+            width:24.9%;
+            float:left;
+            padding-top:19px;
+            font-family:Centaur;
+            font-size:25px;
+            }
+
+            .item:hover {
+                height: 6.9vh;
+                background-color:#483313;
+                color:black;
+                border: 2px solid black;
+               
+            }
+
+            .imagem top {
+
+             width:100%;
+             height:50vh;
+            }
+
+            .tituloGaleria {
+
+            width:100.4%;
+           background:linear-gradient(45deg, gray, black);
+            color:white;
+            height:9vh;
+            font-family:Centaur;
+            font-size:35px;
+            text-align:center;
+            padding-top:13px;
+        }
+
+
+        .SP {
+
+            width:1024px;
+            height:802px;
+            margin:0 auto;
+            margin-top:50px;
+            
+
+        }
+
+        .posMap {
+
+            width:100%;
+            height:auto;
+            margin:0 auto;
+            margin-top: 50px;
+            
+        }
+
+        .TituloTxT {
+
+            text-align:center;
+              font-size:50px;
+              font-family:'Kristen ITC';
+              color:black;
+              font-style:italic;
+        }
+
+        .TxT {
+            height:auto;
+            color:#2f2d2d;
+              font-family:Centaur;
+              font-size:35px;
+              width:100%;
+              text-align:center;
+              margin-top:30px;
+
+        }
+
+        .Mapinha {
+            width:512px;
+            height:448px;
+            margin-left:50px;
+            margin-top:75px;
+            border:2px solid black;
+            float:left;
+        }
+
+        .bauMapinha {
+
+            width:1335px;
+            height:448px;
+            float:left;
+
+        }
+
+        .TxT2 {
+
+            height:auto;
+            color:#2f2d2d;
+              font-family:Centaur;
+              font-size:30px;
+              width:100%;
+              text-align:center;
+              margin-top:73px;
+        }
+
+        .rodape {
+            background:linear-gradient(gray,black);
+            width:100%;
+            height:50vh;
+            color:white;
+            text-align:center;
+            font-size: 25px;
+            font-family:Centaur;
+            border-radius:8px;
+            margin-top:570px;
+
+
+        }
+        
+
+
+        </style>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="Principal">
+
+            <div class="Menu">
+
+                <a href="Default.aspx"> <div class="item">  Home </div> </a>
+               <a href="https://www.vestibulinhoetec.com.br" target="_blank">  <div class="item"> Vestibulinho </div> </a>
+            <a href="Localizacao.aspx">    <div class="item"> Localização </div> </a>
+               <a href="Texto.aspx"> <div class="item"> Sobre </div> </a>
+
+            </div>
+
+            <div class="imagem top">  
+
+                <img src="IMG/mapa%20topo.jpg" />
+
+
+            </div>
+
+
+            <div class="tituloGaleria">
+
+                Por onde Estamos?
+
+
+            </div>
+
+            <div id="mapaSP" class="SP">
+
+
+                <img src="IMG/mapa%20sp.png" />
+
+
+            </div>
+
+            <div class="posMap">
+
+
+                <div id="Titulo" class="TituloTxT">
+
+                    Espalhados por São Paulo!
+
+                </div>
+
+                <div class="TxT">
+
+                    O Estado de São Paulo possui Etecs e Fatecs espalhadas.
+                    <br />
+                    <br />
+                    Assim, se torna possível que alunos de diferentes regiões possam estudar.
+                    <br />
+                    <br />
+                    As Etecs e Fatecs oferecem cursos diferentes, âmbitos escolares únicos de cada uma.
+                    <br />
+                    <br />
+                    A nossa Etec é a única localizada em uma fazenda Agrícola.
+                    <br />
+                    <br />
+                    Para ver os cursos disponíveis de uma Etec/Fatec basta pesquisar seu site pelo nome.
+                    <br />
+                    <br />
+                   ~~ Exemplo: Site Etec Dr. Calorilo da Motta e Silva ~~
+
+                </div>
+
+
+            </div>
+
+
+            <div class="tituloGaleria" style="margin-top:50px;"> Nossa Localização</div>
+
+
+            <div class=" bauMapinha">
+
+
+            <div class="Mapinha">
+
+
+
+                <img src="IMG/mapa%20etec.png" />
+                
+               
+
+            </div>
+
+
+               <div class="TxT2">
+                   
+                  Cidade: Espirito Santo do Pinhal.
+                   <br />
+                   <br />
+                  Telefone: (19) 3651-5386.
+                   <br />
+                   <br />
+                   Endereço: SP-346, ESP, São Paulo, 13990-000.
+                   <br />
+                   <br />
+                   Código Postal: 13990-000.
+                   <br />
+                   <br />
+                   Categoria: Escola Técnica.
+                   <br />
+                   <br />
+                   Região: São Paulo.
+                   <br />
+                   <br />
+                   Horário: Segunda à Sexta (7:00 às 23:00).
+
+
+
+
+
+               </div>
+
+                
+           
+        </div>
+              
+
+            <div id="Rodape" class="rodape">
+                <br />
+                
+
+                Etec - Doutor Carolino da Motta e Silva
+                <br />
+                2 º Ano Informática para Internet
+                <br />
+                Júlio César Bertholucci Ferraz
+                <br />
+                <img src="IMG/Sem%20título.png" />
+
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

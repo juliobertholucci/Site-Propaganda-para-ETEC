@@ -1,0 +1,377 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Texto.aspx.cs" Inherits="Texto" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sobre</title>
+</head>
+
+      <style>
+
+            .Principal {
+              width:100%;
+              height:500vh;
+            
+            }
+
+            .Menu {
+
+             width:100%;
+             height:10vh;
+             background-color:black;
+            }
+
+            .item {
+
+            color:white;
+            text-align:center;
+            height: 8vh;
+            width:24.9%;
+            float:left;
+            padding-top:19px;
+            font-family:Centaur;
+            font-size:25px;
+            }
+
+            .item:hover {
+                height: 6.9vh;
+                background-color:#483313;
+                color:black;
+                border: 2px solid black;
+               
+            }
+
+            .imagem top {
+
+             width:100%;
+             height:50vh;
+            }
+
+            .tituloGaleria {
+
+            width:100.4%;
+           background:linear-gradient(45deg, gray, black);
+            color:white;
+            height:9vh;
+            font-family:Centaur;
+            font-size:35px;
+            text-align:center;
+            padding-top:13px;
+        }
+
+            .bauGaleria {
+
+            width:80%;
+            height:80vh;
+            
+           margin: 0 auto;
+           margin-top:50px;
+            
+        }
+
+          .menuBox {
+
+              width:100%;
+              height:10vh;
+              background-color:black;
+
+
+          }
+
+          .itensMenuBox {
+
+
+              height:8vh;
+              width: 33.33%;
+              color:white;
+              font-size:25px;
+              font-family:Centaur;
+              float:left;
+              text-align:center;
+              padding-top:18px;
+
+
+          }
+
+          .Textos {
+
+              height:64.6vh;
+              width:32.95%;
+              text-align:center;
+              color:black;
+              background-color:#483313;;
+              float:left;
+              border:1.5px solid black;
+              font-size:35px;
+              font-family:Centaur;
+              
+
+
+          }
+
+        
+
+
+          .compeiner {
+
+
+              width:80%;
+              height:50vh;
+              margin:0 auto;
+              margin-top:100px;
+
+          }
+
+          .Titlezinho {
+
+              text-align:center;
+              font-size:50px;
+              font-family:'Kristen ITC';
+              color:black;
+              font-style:italic;
+              
+          }
+
+          .texto {
+
+              height:70vh;
+              color:#2f2d2d;
+              font-family:Centaur;
+              font-size:35px;
+              width:100%;
+              text-align:center;
+              margin-top:30px;
+          }
+
+          .btn {
+
+              width:200px;
+              height:50px;
+              border:2px solid black;
+              border-radius:5px;
+              margin-left:440px;
+              margin-top:80px;
+              font-size:20px;
+              
+
+          }
+
+              .btn:hover {
+                  background-color:#2f2d2d;
+                  color:white;
+              }
+
+
+          .BauRedes {
+
+              width:610px;
+              height:684px;
+              margin:0 auto;
+              background-color:black;
+              margin-top:50px;
+              box-shadow: 5px 5px 5px 5px black;
+                                       
+          }
+
+
+          .redes {
+
+              width:610px;
+              height:228px;
+              border:2px solid black;
+
+                                      
+          }
+
+
+
+              .redes:hover {
+                  
+                  transition:1s;
+                  border-radius:5px;
+                  box-shadow: 7px 7px 7px 7px black;
+
+
+
+              }
+
+
+           .rodape {
+            background:linear-gradient(gray,black);
+            width:100%;
+            height:50vh;
+            color:white;
+            text-align:center;
+            font-size: 25px;
+            font-family:Centaur;
+            border-radius:8px;
+            margin-top:65px;
+
+
+        }
+
+      </style>
+            
+
+        
+
+
+
+<body>
+    <form id="form1" runat="server">
+        <div class="Principal ">
+
+            <div class="Menu">
+
+                <a href="Default.aspx"> <div class="item">  Home </div> </a>
+               <a href="https://www.vestibulinhoetec.com.br" target="_blank">  <div class="item"> Vestibulinho </div> </a>
+              <a href="Localizacao.aspx">  <div class="item"> Localização </div> </a>
+                <div class="item"> Sobre </div>
+
+            </div>
+
+            <div class="imagem top">  
+
+                <img src="IMG/sobretitulo.jpg" />
+
+            </div>
+
+            <div id="tituloTexto" class="tituloGaleria"> O que a Etec Proporciona? </div>
+
+            <div id="ContainerTexto" class="bauGaleria"> 
+
+                <div id="menuBox" class="menuBox"> 
+
+                    <div class="itensMenuBox"> Manhã</div>
+                    <div  class="itensMenuBox"> Tarde</div>
+                    <div  class="itensMenuBox"> Noite</div>
+
+
+                </div>
+
+                <div class="Textos">
+
+                    <img src="IMG/boxTexto1.jpg" />
+
+
+                </div>
+
+                <div class="Textos">
+
+                    <img src="IMG/boxTexto2.jpg" />
+
+                </div>
+
+                <div class="Textos">
+
+                    <img src="IMG/boxTexto3.jpg" />
+
+                </div>
+                
+
+            </div>
+
+           
+
+
+            <div class="compeiner">
+
+                <div class="Titlezinho">
+
+                    Um Pouco de Nós!
+                                        
+
+                </div>
+
+                <div class="texto">
+
+
+                   As melhores notas da Região (escolas públicas) são da Etec!
+                    <br />
+                    <br />
+                   A única Etec que fica em uma fazenda linda e cheia de vida!
+                    <br />
+                    <br />
+                    Professores altamente qualificados para agregar seu conhecimento!
+                    <br />
+                    <br />
+                    Café da manhã, almoço, jantar e alojamento para nossos alunos! 
+                    <br />
+                    <br />
+                    Amplas atividades para os alojados, como esporte, música, teatro e mais!
+                    <br />
+                    <br />
+                    Agropecuária, Informártica, Meio Ambiente. Tudo em uma só escola!
+
+                </div>
+
+                <asp:Button ID="Button1" runat="server" Text="Cadastre-se!" PostBackUrl="~/Default.aspx"  CssClass="btn"/>
+
+
+            </div>
+
+            <div class="tituloGaleria" style="margin-top:380px">
+
+
+                Redes Sociais
+
+
+            </div>
+
+            <div id="bauRede" class="BauRedes">
+
+                <div id="F1" class="redes">
+
+                   <a href="https://pt-br.facebook.com/etec.pinhal/" target="_blank"> <img src="IMG/face.png" /> </a>
+
+                </div>
+
+
+                <div id="F2" class="redes">
+
+                   <a href="https://twitter.com/etecpinhal" target="_blank"> <img src="IMG/twitter-text-logo-and-bird.png.png" /> </a>
+
+                </div>
+
+                <div id="F3" class="redes">
+
+                  <a href="https://www.instagram.com/etecpinhal/" target="_blank">  <img src="IMG/instagram.jpg" /> </a>
+
+                </div>
+
+            </div>
+
+
+
+             <div id="Rodape" class="rodape">
+                <br />
+                
+
+                Etec - Doutor Carolino da Motta e Silva
+                <br />
+                2 º Ano Informática para Internet
+                <br />
+                Júlio César Bertholucci Ferraz
+                <br />
+                <img src="IMG/Sem%20título.png" />
+
+            </div>
+
+            
+           
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </form>
+</body>
+</html>

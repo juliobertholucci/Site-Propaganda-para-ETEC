@@ -1,0 +1,347 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Trabalho Jean</title>
+</head>
+
+    <style>
+
+        .Principal {
+            width:100%;
+            height:550vh;
+            
+
+        }
+
+        .Menu {
+
+            width:100%;
+            height:10vh;
+            background-color:black;
+        }
+
+        .item {
+
+            color:white;
+            text-align:center;
+            height: 8vh;
+            width:24.9%;
+            float:left;
+            padding-top:19px;
+            font-family:Centaur;
+            font-size:25px;
+        }
+
+            .item:hover {
+                height: 6.9vh;
+                background-color:#483313;
+                color:black;
+                border: 2px solid black;
+            }
+
+        .imagem top {
+
+            width:100%;
+            height:50vh;
+        }
+
+        .tituloGaleria {
+
+            width:100.4%;
+           background:linear-gradient(45deg, gray, black);
+            color:white;
+            height:9vh;
+            font-family:Centaur;
+            font-size:35px;
+            text-align:center;
+            padding-top:13px;
+        }
+
+        .bauGaleria {
+
+            width:80%;
+            height:80vh;
+            background-color:#483313;
+           margin: 0 auto;
+           margin-top:50px;
+            
+        }
+
+        .metades {
+
+            width:100%;
+            height:40vh;
+            
+        }
+
+        .imagensBox {
+
+            width: 33.33%;
+            height:40vh;
+            float:left;
+            
+           
+        }
+
+            .imagensBox:hover {
+                opacity:0.4;
+                transition:1s;
+                          
+               
+            }
+
+        .tituloCadastro {
+            width:100.4%;
+           background:linear-gradient(45deg, gray, black);
+            color:white;
+            height:9vh;
+            font-family:Centaur;
+            font-size:35px;
+            text-align:center;
+            padding-top:13px;
+            margin-top: 50px;
+
+        }
+
+        .containerForm {
+
+            width:80%;
+            height:100vh;
+            margin:0 auto;
+
+
+        }
+
+        .tituloForm {
+
+            width:100%;
+            height:9vh;
+            background-color:black;
+            color:white;
+            margin:0 auto;
+            margin-top:25px;
+            text-align:center;
+            padding-top:13px;
+            font-size: 35px;
+            font-family:Centaur;
+            margin-bottom:15px;
+        }
+
+        .labels {
+            font-size:30px;
+            
+            margin-left:550px;
+            border: 3px solid black;
+            
+            
+            
+            
+            
+        }
+
+        .inputs {
+            font-size:20px;
+            width: 50%;
+            height:45px;
+           margin-left:300px;
+           text-align:center;
+           border-radius:5px;
+            
+           
+        }
+
+        .botao {
+
+            font-size:20px;
+            height:45px;
+            margin-left:592px;
+
+
+        }
+
+        .rodape {
+            background:linear-gradient(gray,black);
+            width:100%;
+            height:50vh;
+            color:white;
+            text-align:center;
+            font-size: 25px;
+            font-family:Centaur;
+            border-radius:8px;
+            margin-top:15px;
+
+
+        }
+
+
+
+      
+
+        
+
+
+    </style>
+
+    <script>
+
+        function alertaC() {
+
+            alert("Cadastrado com Sucesso!");
+
+        }
+
+
+    </script>
+
+
+
+
+
+<body margin:0 auto;>
+    <form id="form1" runat="server">
+
+        
+        <div id="Principal" class="Principal">
+
+            <div class="Menu">
+                                
+                <a href="Default.aspx"> <div class="item">  Home </div> </a>
+               <a href="https://www.vestibulinhoetec.com.br" target="_blank">  <div class="item"> Vestibulinho </div> </a>
+               <a href="Localizacao.aspx"> <div class="item"> Localização </div> </a>
+               <a href="Texto.aspx"> <div class="item"> Sobre </div> </a>
+                
+            </div>
+
+            <div id ="Imagem Topo" class="imagem top">
+
+                <img src="IMG/img%20top.jpg" />
+                               
+            </div>
+
+            <div id="Titulo galeria 356x250" class="tituloGaleria">
+
+                 Conheça um pouco de nós !
+                               
+            </div>
+
+            <div id="bauGaleria" class="bauGaleria"> 
+
+
+               <div id="metade1" class="metades">
+
+                   <div class="imagensBox"  style="background-color:blue;">  <img src="IMG/1.jpg" /> </div>
+                   
+                   <div class="imagensBox" style="background-color:yellow;"> <img src="IMG/2.jpg" />  </div>
+                   <div class="imagensBox" style="background-color:black;">  <img src="IMG/3.jpg" /> </div>
+
+               </div>
+
+                <div id="metade2" class="metades">
+
+                   <div class="imagensBox" style="background-color:red;">  <img src="IMG/4.jpg" /> </div>
+                   <div class="imagensBox" style="background-color:purple;"> <img src="IMG/5.png" />  </div>
+                   <div class="imagensBox" style="background-color:green;"> <img src="IMG/6.jpg" />  </div>
+
+                </div>
+
+            </div>
+
+            <div id="cadastro" class="tituloCadastro"> Se cadastre Aqui! Faça parte da nossa escola </div>
+
+
+           <div class="w3-container w3-blue">
+       <h2 style="text-align:center; font-family:Centaur; font-size:35px;">Cadastro Etec</h2>
+       </div>
+
+     <form >
+    <p>
+     <label class="labels" style="text-align:center;">Nome Completo</label>
+        <br />
+        <br />
+     <input class="inputs" type="text"></p>
+     <p>
+     <label class="labels" style="margin-left:600px;">Email</label>
+         <br />
+        <br />
+     <input class="inputs" type="text"></p>
+     <p>
+     <label class="labels" style="margin-left:530px";>Data de Nascimento</label>
+         <br />
+        <br />
+     <input class="inputs" type="date"></p>
+
+         <p>
+     <label class="labels" style="margin-left:610px";>Sexo</label>
+        <br />
+        <br />
+     <input class="inputs" type="text"></p>
+     <p>
+     <label class="labels" style="margin-left:600px";>Cidade</label>
+         <br />
+        <br />
+     <input class="inputs" type="text"></p>
+     <p>
+     <label class="labels" style="margin-left:600px";>Estado</label>
+         <br />
+        <br />
+     <input class="inputs" type="text"></p>
+         <br />
+        
+
+          <p>
+     <label class="labels" style="margin-left:535px; background-color:white;";>Aceito os Termos</label>
+         <br />
+        <br />
+     <input class="inputs" type="checkbox" style="margin-left:310px"></p>
+                 
+         <br />
+         
+         <p>
+
+          <button class="botao" id="btn" onclick="alertaC()">Cadastrar</button>
+
+           </p>
+
+         <br />
+
+            
+
+    </form>
+
+            <div class="tituloGaleria"> Saiba mais sobre a Etec!</div>
+
+            <br />
+            <br />
+            
+
+            <a href="https://www.vestibulinhoetec.com.br" target="_blank"> <img src="IMG/backplate.jpg" /></a>
+
+            
+
+
+            <div id="Rodape" class="rodape">
+                <br />
+                
+
+                Etec - Doutor Carolino da Motta e Silva
+                <br />
+                2 º Ano Informática para Internet
+                <br />
+                Júlio César Bertholucci Ferraz
+                <br />
+                <img src="IMG/Sem%20título.png" />
+
+            </div>
+            
+
+            
+
+
+        </div>
+    </form>
+</body>
+</html>
